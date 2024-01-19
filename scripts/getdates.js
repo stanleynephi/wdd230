@@ -32,7 +32,7 @@ let temperature = getCelsius(84);
 const modified = new Date(document.lastModified)
 const showmodified = modified.getDate()
 
-lastmod.innerHTML = modified.toLocaleDateString("en-UK", option2);
+lastmod.innerHTML = `Last Modified:`+` `+`${modified.toLocaleDateString("en-UK", option2)}`;
 
 
 
