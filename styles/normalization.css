@@ -1,0 +1,23 @@
+body {
+    font-family: "Robotot";
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    width: 200px;
+}
+
+main {
+    display: grid;
+}
+
+footer {
+    align-items: center;
+}
