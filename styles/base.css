@@ -9,10 +9,10 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: aqua;
-    padding: 1% 30%;
+    padding: 1% 25%;
 }
 
 header img {

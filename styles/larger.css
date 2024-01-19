@@ -1,4 +1,10 @@
 @media screen and (min-width: 1080px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 1% 30%;
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
