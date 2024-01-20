@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 300px;
+        height: fit-content;
+    }
+
+    section {
+        background-color: whitesmoke;
+        border: 2px solid;
+        text-align: center;
+        width: fit-content;
+    }
+}
