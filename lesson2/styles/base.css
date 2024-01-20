@@ -17,7 +17,7 @@ main {
     gap: 50px;
     justify-content: center;
     background-color: white;
-    width: auto;
+    margin: 0px;
 }
 
 section {
