@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+.site-wireframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+.mobileview {
+    max-width: 480px;
+    /* iPad Pro in landscape */
+}
+
+.largescreen {
+    width: 100%;
+}
