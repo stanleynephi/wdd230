@@ -14,3 +14,14 @@ li {
     list-style-type: none;
     margin-right: var(--marginright);
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: black;
+
+}
