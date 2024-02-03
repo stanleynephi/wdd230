@@ -1,0 +1,69 @@
+:root {
+    --bgcolor: rgb(121, 181, 245);
+    --padding: 10px;
+    --margin: 20px;
+    --margintop: 30px;
+    --marginbottom: 30px;
+    --marginleft: 20px;
+    --marginright: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin);
+}
+
+#menu {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#purpose {
+    margin: var(--marginbottom);
+}
+
+.purpose {
+    display: flex;
+    flex-direction: row;
+}
+
+#moments {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: var(--margin);
+    align-items: center;
+}
+
+#events {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--marginbottom);
+}
