@@ -1,27 +1,98 @@
-header {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+@media screen and (max-width : 467px) {
 
-.navigation {
-    display: flex;
-    flex-direction: row;
-}
+    header {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
-li {
-    list-style-type: none;
-    margin-right: var(--marginright);
-}
+        >img {
+            background-color: red;
+            width: 20%;
+        }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+        h1 {
+            text-align: center;
+        }
 
-a:active,
-a:hover {
-    color: black;
+        button {
+            margin-left: 15px;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .navigation a {
+        display: none;
+        min-height: 70px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    }
+
+
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✖️";
+
+    }
+
+    .open a {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero,
+    #events {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .purpose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #moments {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: fit-content;
+        margin: var(--margin);
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
 
 }

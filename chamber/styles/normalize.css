@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+
+
 :root {
     --bgcolor: rgb(121, 181, 245);
     --padding: 10px;
@@ -14,13 +18,26 @@ body {
     margin: var(--margin);
 }
 
-#menu {
-    display: none;
-}
-
 main {
     display: flex;
     flex-direction: column;
+}
+
+
+li {
+    list-style-type: none;
+    margin-right: var(--marginright);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:hover {
+    color: black;
+
 }
 
 
@@ -38,18 +55,8 @@ main {
     flex-direction: row;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.links {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
+
 
 li {
     list-style: none;
@@ -64,6 +71,18 @@ li {
 
 #events {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: var(--marginbottom);
+}
+
+h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }

@@ -17,34 +17,34 @@
     <meta property="og:url" content="https://stanleynephi.github.io/wdd230/" />
     <title>Chamber of Commerce</title>
     <!--styles sheets and javascript links -->
-    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
   <body>
     <header>
-      <img src="#" alt="Chambre of Commerce Logo" />
+      <img src="images/favicon.png" alt="Chambre of Commerce Logo" />
       <h1>Chamber of Commerce</h1>
       <button id="menu"></button>
-      <nav>
-        <ul class="navigation">
-          <li><a href="#">Home </a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Calendar </a></li>
-          <li><a href="#">News or Blog </a></li>
-          <li><a href="#">Member Directory </a></li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home </a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Calendar </a></li>
+        <li><a href="#">News or Blog </a></li>
+        <li><a href="#">Member Directory </a></li>
+      </ul>
+    </nav>
 
     <!-- main body and content-->
     <main>
       <!-- herosection -->
       <section id="hero">
         <div class="heroimage">
-          <img src="#" alt="Hero Image" />
+          <img src="" alt="Hero Image" />
         </div>
         <div class="calltoaction">
           <button class="cta"><a href="#">JOIN NOW</a></button>
@@ -79,41 +79,37 @@
 
       <!-- moments section -->
       <section id="moments">
-        <div>
-          <!-- moment cards -->
-          <div class="card1">
-            <img src="#" alt="Card 1 Images" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              quis obcaecati dicta accusamus quam odio iure nam, enim libero
-              totam magnam corporis itaque, quasi non maiores, consequatur iusto
-              voluptatibus tenetur?
-            </p>
-          </div>
+        <!-- moment cards -->
+        <div class="card1">
+          <img src="#" alt="Card 1 Images" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quis obcaecati dicta accusamus quam odio iure nam, enim libero totam
+            magnam corporis itaque, quasi non maiores, consequatur iusto
+            voluptatibus tenetur?
+          </p>
         </div>
-        <div>
-          <!-- moment cards -->
-          <div class="card2">
-            <img src="#" alt="card 2 image" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              saepe laborum ducimus. Expedita unde quod repellat reiciendis
-              commodi amet repudiandae molestias architecto ratione, facere
-              reprehenderit nulla accusamus, necessitatibus eveniet non!
-            </p>
-          </div>
+
+        <!-- moment cards -->
+        <div class="card2">
+          <img src="#" alt="card 2 image" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe
+            laborum ducimus. Expedita unde quod repellat reiciendis commodi amet
+            repudiandae molestias architecto ratione, facere reprehenderit nulla
+            accusamus, necessitatibus eveniet non!
+          </p>
         </div>
-        <div>
-          <!-- moment cards -->
-          <div class="card3">
-            <img src="#" alt="card 3 image" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, quo
-              sapiente ex odit excepturi, fugit ipsum iste itaque aspernatur
-              voluptas est veniam rem beatae at totam perspiciatis recusandae
-              repellat provident.
-            </p>
-          </div>
+
+        <!-- moment cards -->
+        <div class="card3">
+          <img src="#" alt="card 3 image" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, quo
+            sapiente ex odit excepturi, fugit ipsum iste itaque aspernatur
+            voluptas est veniam rem beatae at totam perspiciatis recusandae
+            repellat provident.
+          </p>
         </div>
       </section>
     </main>
@@ -126,8 +122,10 @@
           <li><a href="#">News or Blog</a></li>
           <li><a href="#">Member Directory</a></li>
         </ul>
-        &copy; copyright reserved 2023
-        <p id="lastmodified"></p>
+        <div class="details">
+          &copy; copyright reserved 2023
+          <p id="lastmodified"></p>
+        </div>
       </div>
       <div class="socials">
         <div class="socialicons"></div>
