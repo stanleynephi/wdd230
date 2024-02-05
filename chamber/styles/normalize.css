@@ -12,11 +12,11 @@
     --marginright: 20px;
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
     margin: var(--margin);
-}
+} */
 
 main {
     display: flex;

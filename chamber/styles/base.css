@@ -1,4 +1,11 @@
-@media screen and (max-width : 467px) {
+@media screen and (max-width : 480px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     header {
         /* background-color: blue; */
@@ -6,6 +13,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        position: static;
 
         >img {
             background-color: red;
@@ -22,25 +30,22 @@
     }
 
     .navigation {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        position: relative;
+        display: inline-block;
+        background-color: aqua;
     }
 
 
     .navigation a {
         display: none;
-        min-height: 70px;
-        text-align: center;
-        text-decoration: none;
         position: relative;
     }
 
 
-
     #menu::before {
-        content: "☰";
+        content:
+            "🟰";
+
     }
 
     #menu.open::before {
@@ -49,8 +54,7 @@
     }
 
     .open a {
-        display: flex;
-        justify-content: center;
+        display: block;
     }
 
     #hero,
