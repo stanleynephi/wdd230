@@ -18,7 +18,7 @@ lastmod.innerHTML = `Last Modified:`+` `+`${modifieddate.toLocaleDateString("en-
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-hamButton.addEventListener('mouseover', () => {
+hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
