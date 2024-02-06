@@ -29,17 +29,36 @@
         }
     }
 
-    .navigation {
-        position: relative;
-        display: inline-block;
-        background-color: aqua;
+    nav {
+        display: flex;
+        justify-content: center;
     }
 
+    .navigation {
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        top: 17%;
+        background-color: white;
+
+        animation: growDown 300ms ease-in-out forwards;
+    }
+
+    .navigation a:hover {
+        color: rgb(16, 144, 213);
+        width: auto;
+    }
 
     .navigation a {
         display: none;
         position: relative;
+        padding: 15px;
+        font-size: 25px;
+        margin: 0px;
     }
+
 
 
     #menu::before {
@@ -55,6 +74,7 @@
 
     .open a {
         display: block;
+        height: 100%;
     }
 
     #hero,
@@ -98,5 +118,8 @@
         align-items: center;
         text-align: center;
     }
+
+
+
 
 }
