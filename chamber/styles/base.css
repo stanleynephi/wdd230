@@ -1,4 +1,4 @@
-@media screen and (max-width : 480px) {
+@media only screen and (max-width : 32.5em) {
 
     body {
         display: flex;
@@ -13,7 +13,9 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        position: static;
+        background-color: white;
+        position: fixed;
+        top: 0px;
 
         >img {
             background-color: red;
@@ -35,15 +37,13 @@
     }
 
     .navigation {
-        position: absolute;
+        position: fixed;
         display: inline-block;
         text-align: center;
         justify-content: center;
-        width: 100%;
-        top: 17%;
+        width: 111%;
+        top: 15%;
         background-color: white;
-
-        animation: growDown 300ms ease-in-out forwards;
     }
 
     .navigation a:hover {
@@ -53,7 +53,7 @@
 
     .navigation a {
         display: none;
-        position: relative;
+        position: sticky;
         padding: 15px;
         font-size: 25px;
         margin: 0px;
@@ -76,6 +76,17 @@
         display: block;
         height: 100%;
     }
+
+
+    .navigation .open {
+        position: fixed;
+    }
+
+
+    main {
+        margin-top: 30%;
+    }
+
 
     #hero,
     #events {
