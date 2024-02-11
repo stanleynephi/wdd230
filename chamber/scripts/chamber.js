@@ -23,3 +23,26 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+//popup to ask user for a theme change.
+const body = document.querySelector("html");
+const theme =document.querySelector("input");
+const header = document.querySelector("header");
+
+
+
+theme.addEventListener("change",() => {
+    if(theme.checked){
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        header.style.backgroundColor = "black";
+        navigation.style.backgroundColor = "black";
+}
+    else{
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+        header.style.backgroundColor = "white"
+        navigation.style.backgroundColor = "white";
+    }
+})
+
+
