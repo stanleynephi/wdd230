@@ -31,7 +31,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
     font-family: 'Roboto', sans-serif;
 }
 

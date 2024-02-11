@@ -27,6 +27,8 @@ hamButton.addEventListener('click', () => {
 const body = document.querySelector("html");
 const theme =document.querySelector("input");
 const header = document.querySelector("header");
+const purpose = document.querySelector(".purpose")
+const mail = document.querySelector("#footer");
 
 
 
@@ -36,13 +38,21 @@ theme.addEventListener("change",() => {
         body.style.color = "white";
         header.style.backgroundColor = "black";
         navigation.style.backgroundColor = "black";
+        purpose.style.backgroundColor = "black";
+        purpose.style.color = "white";
+        mail.style.backgroundColor = "black";
+        mail.style.color = "white";
 }
     else{
         body.style.backgroundColor = "white";
         body.style.color = "black";
         header.style.backgroundColor = "white"
         navigation.style.backgroundColor = "white";
+        purpose.style.backgroundColor ="aliceblue";
+        mail.style.backgroundColor = "white";
+        mail.style.color = "black";
     }
 })
+
 
 
