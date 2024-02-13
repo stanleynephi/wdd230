@@ -42,6 +42,7 @@ theme.addEventListener("change",() => {
         purpose.style.color = "white";
         mail.style.backgroundColor = "black";
         mail.style.color = "white";
+        document.querySelector(".calltoaction p").style.color = "white";
 }
     else{
         body.style.backgroundColor = "white";
@@ -49,8 +50,10 @@ theme.addEventListener("change",() => {
         header.style.backgroundColor = "white"
         navigation.style.backgroundColor = "white";
         purpose.style.backgroundColor ="aliceblue";
+        purpose.style.color = "black";
         mail.style.backgroundColor = "white";
         mail.style.color = "black";
+        document.querySelector(".calltoaction p").style.color = "black";
     }
 })
 

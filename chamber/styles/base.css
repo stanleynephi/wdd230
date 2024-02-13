@@ -1,10 +1,14 @@
-@media only screen and (max-width : 32.5em) {
+@media only screen and (max-width : 600px) {
 
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    img {
+        width: 360px;
     }
 
     header {
@@ -123,7 +127,7 @@
         text-align: center;
         justify-content: center;
         width: 111%;
-        top: 15%;
+        top: 12%;
         background-color: white;
     }
 
@@ -181,10 +185,34 @@
 
     main {
         margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
 
-    #hero,
+        >.calltoaction {
+            top: -20px;
+            margin-top: -20px;
+
+            >p {
+                color: black;
+                font-size: 25px;
+            }
+        }
+    }
+
+    /* .heroimage img {
+        width: 350px;
+    } */
+
     #events {
         display: flex;
         justify-content: center;
@@ -195,39 +223,71 @@
     }
 
 
-    .purpose {
+    #purpose {
+        margin-bottom: 30px;
+        width: inherit;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
+        justify-content: space-around;
 
-    #moments {
+        .purpose {
+            display: flex;
+            flex-direction: column;
+        }
+
+        >.purposetext {
+            text-align: center;
+            width: auto;
+        }
+    }
+}
+
+#moments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    margin-bottom: 80%;
+
+    >.card1,
+    >.card2,
+    >.card3 {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+#footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    >.links {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        text-align: center;
+
+        >.details {
+            margin-left: 15px;
+        }
     }
+}
 
-    .card1,
-    .card2,
-    .card3 {
-        width: fit-content;
-        margin: var(--margin);
+footer .name {
+    padding: 0 25%;
+}
 
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-    }
-
-
-
-
-
+footer .email {
+    padding: 0 35%;
 }

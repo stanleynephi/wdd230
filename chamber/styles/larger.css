@@ -104,13 +104,42 @@
         display: flex;
         flex-direction: column;
         color: inherit;
+        height: auto;
 
         >#hero {
+            position: relative;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: url(/chamber/images/flat-lay-business-concept.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Black overlay with 50% opacity */
+        }
+
+        .heroimage {
+            width: 50%;
+            opacity: 100;
+            position: relative;
+
+            >img {
+                max-width: 80%;
+            }
+        }
+
+        .calltoaction {
+            position: relative;
         }
 
         >#events {
@@ -126,13 +155,24 @@
                 background-color: aliceblue;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 text-align: center;
                 height: 100vh;
 
                 .purposetext {
-                    width: 150px;
+                    width: 550px;
+                    margin-left: 5%;
+                    font-size: 30px;
+                    font-family: "Roboto";
+                }
+
+                .purposeimages {
+                    width: 500px;
+                }
+
+                .purposeimages img {
+                    width: inherit;
                 }
             }
 
@@ -144,7 +184,7 @@
             justify-content: space-around;
             align-items: center;
             text-align: center;
-            height: 100vh;
+            height: auto;
         }
     }
 
@@ -153,6 +193,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        margin-top: 0px;
 
         .links {
             display: flex;
@@ -164,6 +206,33 @@
                 margin-left: var(--marginleft);
                 border-left: 3px solid rgb(77, 75, 75);
             }
+        }
+    }
+
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 400px;
+        background-color: rgba(11, 12, 12, 0.593);
+        padding: 10px;
+
+        >img {
+            width: 400px;
+            height: 300px;
+            border-radius: 0px 0px 50% 50%;
+            transition: border-radius 0.5s ease;
+            overflow-wrap: inherit;
+        }
+
+        >img:hover {
+            border-radius: 0px;
+        }
+
+        >p {
+            width: auto;
+            height: auto;
+            font-size: 20px;
         }
     }
 }
