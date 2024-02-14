@@ -43,6 +43,7 @@ theme.addEventListener("change",() => {
         mail.style.backgroundColor = "black";
         mail.style.color = "white";
         document.querySelector(".calltoaction p").style.color = "white";
+        document.querySelector("footer").style.borderTop = "3px solid white"; 
 }
     else{
         body.style.backgroundColor = "white";
@@ -54,6 +55,7 @@ theme.addEventListener("change",() => {
         mail.style.backgroundColor = "white";
         mail.style.color = "black";
         document.querySelector(".calltoaction p").style.color = "black";
+        document.querySelector("footer").style.borderTop = "3px solid black"; 
     }
 })
 

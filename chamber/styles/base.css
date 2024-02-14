@@ -1,4 +1,4 @@
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 768px) {
 
     body {
         display: flex;
@@ -127,8 +127,9 @@
         text-align: center;
         justify-content: center;
         width: 111%;
-        top: 12%;
+        top: 100px;
         background-color: white;
+        z-index: 1;
     }
 
     .navigation a:hover {
@@ -180,114 +181,85 @@
     .navigation .open {
         position: fixed;
 
+
     }
 
-
-    main {
-        margin-top: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
 
     #hero {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 10px;
+        margin-top: 65px;
         text-align: center;
 
         >.calltoaction {
-            top: -20px;
-            margin-top: -20px;
-
             >p {
-                color: black;
                 font-size: 25px;
             }
         }
     }
 
-    /* .heroimage img {
-        width: 350px;
-    } */
-
+    /*styles for the event sections*/
     #events {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        gap: 20px;
         text-align: center;
     }
 
-
-    #purpose {
-        margin-bottom: 30px;
-        width: inherit;
+    /*styles for the purpose sections*/
+    .purpose {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        text-align: center;
 
-        .purpose {
-            display: flex;
-            flex-direction: column;
-        }
+        width: 100%;
 
         >.purposetext {
-            text-align: center;
-            width: auto;
+            width: 350px;
+
         }
     }
-}
 
-#moments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    gap: 30px;
-    margin-bottom: 80%;
-
-    >.card1,
-    >.card2,
-    >.card3 {
+    #moments {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 300px;
-
-        >img {
-            width: 100%;
-        }
-    }
-}
-
-#footer {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    >.links {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
-        >.details {
-            margin-left: 15px;
+        >.card1,
+        >.card2,
+        >.card3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            margin-bottom: 20px;
+
+            >img {
+                width: 100p;
+            }
         }
     }
-}
 
-footer .name {
-    padding: 0 25%;
-}
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
 
-footer .email {
-    padding: 0 35%;
+        .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
 }
