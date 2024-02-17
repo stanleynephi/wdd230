@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.webp" />
   </head>
   <body>
     <header>
-      <img src="images/favicon.png" alt="Chambre of Commerce Logo" />
+      <img src="images/favicon.webp" alt="Chambre of Commerce Logo" />
       <h1>Chamber of Commerce</h1>
       <div class="buttons">
         <button id="menu"></button>
@@ -50,10 +50,22 @@
       <section id="hero">
         <div class="overlay"></div>
         <div class="heroimage">
-          <img
-            src="images/studio-shot-positive-dark-skinned-girl-wears-round-transparent-glasses.webp"
-            alt="Hero Image"
-          />
+          <picture>
+            <source
+              media="(max-width:768px )"
+              srcset="images/wdd230-org-small.webp"
+            />
+            <source
+              media="(min-width: 1000px )"
+              srcset="images/wdd230-org-medium.webp"
+            />
+            <img
+              src="./images/wdd230-org-large.webp"
+              width="1500"
+              height="750"
+              alt="businesses meeting"
+            />
+          </picture>
         </div>
         <div class="calltoaction">
           <p>
@@ -70,17 +82,37 @@
           <h2>Current Event</h2>
         </div>
 
-        <div class="weather"><h2>Weather / Temperature</h2></div>
+        <div class="weather">
+          <h2>Weather / Temperature</h2>
+          <div class="info">Let Check The Wind Chill</div>
+          <div class="details">
+            <input
+              id="temperature"
+              type="number"
+              placeholder="Temperature"
+              required
+            />
+            <input
+              id="windspeed"
+              type="number"
+              placeholder="Wind Speed"
+              required
+            />
+            <input type="button" value="click" id="btn1" />
+            <div id="results"></div>
+          </div>
+        </div>
       </section>
       <!-- purpose section -->
       <section id="purpose">
         <div class="purpose">
           <div class="purposeoverlay"></div>
           <div class="purposeimages">
-            <img
-              src="images/intercultural-hand-shake-outdoor.webp"
-              alt="text"
-            />
+            <picture>
+              <source media="(min-width: )" srcset="" />
+              <source media="(min-width: )" srcset="" />
+              <img src="" alt="" />
+            </picture>
           </div>
           <div class="purposetext">
             <h2>purpose</h2>
@@ -97,10 +129,11 @@
       <section id="moments">
         <!-- moment cards -->
         <div class="card1">
-          <img
-            src="images/group-people-working-out-business-plan-office.webp"
-            alt="Card 1 Images"
-          />
+          <picture>
+            <source media="(min-width: )" srcset="" />
+            <source media="(min-width: )" srcset="" />
+            <img src="" alt="" />
+          </picture>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis obcaecati dicta accusamus quam odio iure nam, enim libero totam
@@ -111,7 +144,11 @@
 
         <!-- moment cards -->
         <div class="card2">
-          <img src="images/pexels-pixabay-207692.webp" alt="card 2 image" />
+          <picture>
+            <source media="(min-width: )" srcset="" />
+            <source media="(min-width: )" srcset="" />
+            <img src="" alt="" />
+          </picture>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit saepe
             laborum ducimus. Expedita unde quod repellat reiciendis commodi amet
@@ -122,7 +159,11 @@
 
         <!-- moment cards -->
         <div class="card3">
-          <img src="images/pexels-pixabay-162553.webp" alt="card 3 image" />
+          <picture>
+            <source media="(min-width: )" srcset="" />
+            <source media="(min-width: )" srcset="" />
+            <img src="" alt="" />
+          </picture>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, quo
             sapiente ex odit excepturi, fugit ipsum iste itaque aspernatur
@@ -153,6 +194,7 @@
         </div>
       </div>
     </footer>
-    <script defer src="scripts/chamber.js"></script>
+    <script defer src="scripts/chamber.js" type="module"></script>
+    <!-- <script defer src="scripts/windchill.js"></script> -->
   </body>
 </html>

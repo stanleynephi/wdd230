@@ -190,12 +190,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 65px;
+        margin-top: 110px;
         text-align: center;
+
+        >.heroimage {
+            width: 100%;
+
+            >picture {
+                width: 100%;
+
+                >img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
 
         >.calltoaction {
             >p {
                 font-size: 25px;
+                color: black;
             }
         }
     }

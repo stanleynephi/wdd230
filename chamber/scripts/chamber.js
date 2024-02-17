@@ -61,3 +61,14 @@ theme.addEventListener("change",() => {
 
 
 
+
+import{
+    display
+} from "./windchill.js";
+
+
+const buttons = document.getElementById("btn1");
+
+buttons.addEventListener("click" , display);
+
+
