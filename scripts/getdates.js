@@ -44,7 +44,7 @@ lastmod.innerHTML = `Last Modified:`+` `+`${modified.toLocaleDateString("en-UK",
     secondSection.innerHTML =  `&#127774;`+" "+`Temperature` + " "+ `${Math.floor(temperature,1)}` +`&deg;`+ "-" + "F";
 
 
-    let numVisits = Number(window.localStorage.getItem("numVisits-1s")) || 0;
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
     if(numVisits !== 0) {
         visit.textContent = numVisits;
