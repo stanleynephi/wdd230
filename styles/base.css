@@ -48,6 +48,10 @@ main {
     margin: 0px 0px 30% 0px;
 }
 
+.hero {
+    top: -15px;
+}
+
 .herolabel {
     top: 10px;
     left: 5px;
