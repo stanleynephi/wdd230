@@ -1,7 +1,7 @@
 const name = document.querySelector("footer p");
 const student = "Nuley Stanley Nephi";
 const lastmod = document.querySelector("#lastmodified")
-const visit = document.querySelector(".card p:nth-child(3)");
+const visit = document.querySelector(".visits");
 
 // creaate the date and time object
 const option = {
@@ -44,16 +44,18 @@ lastmod.innerHTML = `Last Modified:`+` `+`${modified.toLocaleDateString("en-UK",
     secondSection.innerHTML =  `&#127774;`+" "+`Temperature` + " "+ `${Math.floor(temperature,1)}` +`&deg;`+ "-" + "F";
 
 
+    let numVisits = Number(window.localStorage.getItem("numVisits-1s")) || 0;
 
+    if(numVisits !== 0) {
+        visit.textContent = numVisits;
+    }
+    else{
+        visit.textContent = `This is your first visit. 🥳 Welcome!`;
+    }
 
-    // create the count visit
-    let count = parseInt(localStorage.getItem("visitorCounter") || "0");
+    numVisits++;
 
-    count++;
-
-    localStorage.setItem("visitorCounter",count);
-
-    visit.innerHTML = `Page Visits: ` + `${count}`
+    localStorage.setItem("numVisits-ls", numVisits);
 
 
 const hamButton = document.querySelector('#menu');
