@@ -1,28 +1,47 @@
 //function to set the last visit date in local storage
+const option = {
+    day: "numeric",
+    month : "long",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+}
+
+const date = new Date().toLocaleDateString(undefined,option) 
+
 function setLastVisit(){
-    const now = Date.now();
-    localStorage.setItem("lastVisit", now)
+    localStorage.setItem("lastVisit", Date.now())
 }
 
-function getLastVisit(){
-    let lastVisitTime = localStorage.getItem("lastVisit")
-    if (lastVisitTime){
-        return new Date.parse(lastVisitTime);
-    }
-    else{
-        return "Welcome! Let us know if you have any questions"
-    }
+setLastVisit();
+
+function displayDaysSinceLastVisit() {
+
+  const lastVisit = localStorage.getItem('lastVisit');
+  if (lastVisit) {
+      const lastVisited = parseInt(lastVisit);
+      const currentTime = Date.now();
+      const timeDifference = currentTime - lastVisit;
+      const oneDayInMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+      if (timeDifference < oneDayInMilliseconds) {
+          return "Back so soon! Awesome!";
+      } else {
+          const daysDifference = Math.floor(timeDifference / oneDayInMilliseconds);
+          if (daysDifference === 1) {
+              return "You last visited 1 day ago.";
+          } else {
+              return "You last visited " + daysDifference + " days ago.";
+          }
+      }
+  } else {
+      return "Welcome! Let us know if you have any questions.";
+  }
 }
 
-const visits = document.querySelector(".visit p").innerHTML = getLastVisit();
 
-let lastVisitTime = getLastVisit();
-if (lastVisitTime) {
-    console.log("Last visit: " + lastVisitTime);
-} else {
-    console.log("First time visit.");
-    setLastVisitLocalStorage();
-}
+// displayDaysSinceLastVisit()
+const visit = document.querySelector(".visit").innerHTML = displayDaysSinceLastVisit();
 
-// document.getElementById('visited').innerHTML=getLastVisit()
 
