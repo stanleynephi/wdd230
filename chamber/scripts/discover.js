@@ -22,9 +22,10 @@ function displayDaysSinceLastVisit() {
   if (lastVisit) {
       const lastVisited = parseInt(lastVisit);
       const currentTime = Date.now();
-      const timeDifference = currentTime - lastVisit;
+      const timeDifference = currentTime - lastVisited;
       const oneDayInMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
 
+      
       if (timeDifference < oneDayInMilliseconds) {
           return "Back so soon! Awesome!";
       } else {
