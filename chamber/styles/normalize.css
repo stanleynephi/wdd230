@@ -181,8 +181,6 @@ h2 {
 .main {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    gap: 40px;
     justify-content: center;
     align-self: center;
 }
@@ -190,9 +188,6 @@ h2 {
 .content {
     grid-column: 1/4;
     grid-row: auto;
-    width: 100%;
-    /* overflow-y: auto;
-    scroll-snap-type: y mandatory; */
     display: flex;
 }
 
@@ -287,6 +282,24 @@ button:active {
     transform: scale(0.95);
     transition: transform 1s ease-in-out;
     color: blue;
+}
+
+.visit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 20px;
+
+    >.visited {
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        background-color: burlywood;
+        width: 100%;
+    }
 }
 
 iframe {
