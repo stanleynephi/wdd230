@@ -144,3 +144,9 @@ iframe {
     loading: lazy;
     referrerpolicy: no-referrer-when-downgrade;
 }
+
+#record {
+    width: 340px;
+    align-self: center;
+    margin-bottom: 10px;
+}

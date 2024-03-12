@@ -1,0 +1,133 @@
+:root {
+    --main-Color: blue;
+    --hover-Color: white;
+    --text-Color: black;
+}
+
+#mainforms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+fieldset,
+#mainforms input[type="submit"] {
+    margin: 10px 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin: 10px 20px;
+    max-width: 500px;
+    width: 90%;
+    padding: 25px;
+}
+
+#mainforms label {
+    padding: 5px;
+    font-size: 20px;
+}
+
+#mainforms fieldset:nth-child(1) input {
+    display: block;
+    height: 30px;
+    max-width: 500px;
+    width: 400px;
+    appearance: none;
+    border: solid 1px var(--main-Color);
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+#mainforms fieldset:nth-child(1) input:required {
+    border-right: solid 8px red;
+}
+
+#mainforms fieldset:nth-child(1) input:valid {
+    border-right: solid 8px green;
+}
+
+.error {
+    margin-top: 5px;
+    width: 90%;
+    height: 20px;
+    max-width: 500px;
+}
+
+#mainforms input[type="submit"] {
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-left: 40px;
+}
+
+
+#mainforms input[type="submit"]:hover {
+    transform: scale(1.2);
+    transition: transform ease-in-out 0.5s;
+}
+
+
+#mainforms input[type="submit"]:active {
+    transform: scale(0.8);
+
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: rgb(188, 161, 6);
+    width: 30px;
+    height: 40px;
+    font-size: 10px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+/* @keyframes button {
+    0% {
+        transform: scale(.9);
+    }
+
+
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+} */
