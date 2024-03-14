@@ -489,3 +489,17 @@ input[type="submit"]:hover {
     transform: scale(1.1);
     transition: transform .3s ease;
 }
+
+#thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    height: 28rem;
+
+    >p {
+        font-size: 30px;
+    }
+
+}
