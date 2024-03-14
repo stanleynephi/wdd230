@@ -319,3 +319,173 @@ footer {
     align-items: center;
     text-align: center;
 }
+
+/* #formbenefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+
+    >.forms {
+        display: flex;
+        margin: 20px 40px;
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 10px 20px 10px 0px;
+    box-shadow: 5px 5px black;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    appearance: none;
+    background-color: antiquewhite;
+    height: 30px;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.benefits {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nonprofitcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+.free {
+    font-size: 23px;
+
+    >ul {
+
+        >li {
+            list-style: square;
+            text-align: left;
+        }
+    }
+}
+
+.profit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+
+}
+
+.benefitscard {
+    width: 300px;
+    height: 400px;
+    border: 3px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.silver,
+.bronze,
+.gold {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+
+
+    >ul {
+        text-align: left;
+
+        >li {
+            list-style: circle;
+            font-size: 20px;
+        }
+    }
+
+    >p {
+        font-size: 30px;
+    }
+} */
+
+
+.bronze {
+    background-color: rgb(226, 208, 147);
+    width: 290px;
+    height: inherit;
+    border-radius: inherit;
+}
+
+
+.silver {
+    background-color: rgb(125, 125, 122);
+    width: 290px;
+    height: inherit;
+    border-radius: inherit;
+}
+
+
+
+.gold {
+    background-color: rgb(117, 98, 34);
+    width: 290px;
+    height: 390px;
+    border-radius: inherit;
+}
+
+.forms input:required {
+    border-right: solid 8px red;
+}
+
+.forms input:required:valid {
+    border-right: solid 8px green;
+}
+
+
+input[type="submit"] {
+    height: 35px;
+    font-size: 20px;
+    border-radius: 20px 10px 15px;
+    border: black 3px solid;
+
+
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}

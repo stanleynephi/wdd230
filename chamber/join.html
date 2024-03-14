@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development Project
+    Nuley Stanley Nephi - Chamber of Commerce"
+    />
+    <meta name="author" content="Nuley Stanley Nephi" />
+    <meta property="og:title" content="About Accra Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:image"
+      content="https://ama.gov.gh/img/fade-slider/accra-1.jpg"
+    />
+    <meta property="og:url" content="https://stanleynephi.github.io/wdd230/" />
+    <title></title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/favicon.webp" alt="Chambre of Commerce Logo" />
+      <h1>Chamber of Commerce</h1>
+      <div class="buttons">
+        <button id="menu"></button>
+        <label class="switch">
+          <input type="checkbox" /> <span class="slider round"></span
+        ></label>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home </a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Calendar </a></li>
+        <li><a href="#">News or Blog </a></li>
+        <li><a href="#">Member Directory </a></li>
+      </ul>
+    </nav>
+
+    <section id="formbenefits">
+      <div class="forms">
+        <form method="get" action="#" class="forms">
+          <fieldset>
+            <legend>User Info</legend>
+            <label
+              >First Name* <input type="text" name="fname" id="fname" required
+            /></label>
+            <label
+              >Last Name* <input type="text" name="lname" id="lname" required
+            /></label>
+            <label
+              >Title or Position*
+              <input type="text" name="title" id="title" required
+            /></label>
+            <label
+              >Email* <input type="email" name="email" id="email" required
+            /></label>
+            <label>Phone* <input type="tel" name="tel" id="tel" /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Company Information</legend>
+            <label
+              >Business/Organisation Name*
+              <input type="text" name="bname" id="bname" required
+            /></label>
+            <label
+              ><input type="radio" name="Audience" id="" value="NonProfit" />
+              Non-Profit Organisation</label
+            >
+            <label
+              ><input type="radio" name="Audience" id="" value="Bronze" />
+              Bronze Membership</label
+            >
+            <label
+              ><input type="radio" name="Audience" id="" value="Silver" />
+              Silver Membership</label
+            >
+            <label
+              ><input type="radio" name="Audience" id="" value="Gold" /> Gold
+              Membership</label
+            >
+            <label>
+              About Business*
+              <textarea
+                name="company discription"
+                id="companydes"
+                cols="50"
+                rows="15"
+                required
+              ></textarea>
+            </label>
+          </fieldset>
+          <input type="hidden" name="timestamp" id="timestamp" />
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Submit To Join Chamber"
+          />
+        </form>
+      </div>
+
+      <div class="benefits">
+        <div class="nonprofitcard">
+          <div class="free">
+            <h1>For Non-Profit Organisation</h1>
+            <ul>
+              <li>Access to Chamber events and seminars</li>
+              <li>Listing in online non-profit directory</li>
+              <li>Volunteer recruitment assistance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="profit">
+          <div class="benefitscard">
+            <div class="bronze">
+              <h1>Bronze</h1>
+              <ul>
+                <li>Access to networking events</li>
+                <li>Listing in online business directory</li>
+                <li>Discounts on Chamber-sponsored events</li>
+                <li>Monthly newsletter subscription</li>
+              </ul>
+
+              <p>$400</p>
+            </div>
+          </div>
+          <div class="benefitscard">
+            <div class="silver">
+              <h1>Silver</h1>
+              <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Featured listing in online business directory</li>
+                <li>Exclusive sponsorship opportunities</li>
+                <li>Access to Chamber educational seminars</li>
+              </ul>
+              <p>$800</p>
+            </div>
+          </div>
+          <div class="benefitscard">
+            <div class="gold">
+              <h1>Gold</h1>
+              <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Priority listing in online business directory</li>
+                <li>Free booth at Chamber events</li>
+                <li>Invitation to VIP networking events</li>
+                <li>Recognition in Chamber publications</li>
+              </ul>
+
+              <p>$1200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="name">Chamber of Commerce</div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News or Blog</a></li>
+          <li><a href="#">Member Directory</a></li>
+        </ul>
+        <div class="details">
+          &copy; copyright reserved 2023
+          <p id="lastmodified"></p>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="socialicons"></div>
+        <div class="email">
+          <a href="mailto:stanleynuley@gmail.com">stanleynuley@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+    <script defer src="scripts/chamber.js" type="module"></script>
+  </body>
+</html>
