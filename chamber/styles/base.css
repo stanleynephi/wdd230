@@ -309,7 +309,7 @@
 
     textarea {
         display: block;
-        width: 100%;
+        width: fit-content;
         border: 3px solid black;
     }
 
@@ -326,6 +326,10 @@
 
     input[type="radio"] {
         margin-right: 6px;
+    }
+
+    input[type="submit"] {
+        z-index: 0;
     }
 
     label {
