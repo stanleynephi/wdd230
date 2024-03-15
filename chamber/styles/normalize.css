@@ -482,6 +482,10 @@ input[type="submit"] {
     border-radius: 20px 10px 15px;
     border: black 3px solid;
 
+    :active {
+        z-index: 0;
+    }
+
 
 }
 
