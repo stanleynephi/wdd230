@@ -32,3 +32,8 @@ section {
     align-items: center;
     text-align: center;
 }
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
