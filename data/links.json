@@ -1,0 +1,94 @@
+{
+    "lessons":[
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson1/media-query.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links":[
+                {
+                    "url":"Lesson2/design-principle.html",
+                    "title": "Design Craft"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links":[
+                {
+                    "url":"lesson03/chamber-site-plan.html",
+                    "title": "Chamber-Site-Plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links":[
+                {
+                    "url":"https://codepen.io/stanleynephi/pen/QWomxrq",
+                    "title": "Codepen Week 04"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links":[
+                {
+                    "url":"lesson05/bom.html",
+                    "title": "Book Of Mormon Activity"
+                }
+            ]
+        },        {
+            "lesson": "06",
+            "links":[
+                {
+                    "url":"images/landscape.jpg.webp",
+                    "title": "WebP images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links":[
+                {
+                    "url":"./lesson/responsive-images.html",
+                    "title": "Images Optimization Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links":[
+                {
+                    "url":"./lesson08/bom.html",
+                    "title": "Local Storage Avtivity"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links":[
+                {
+                    "url":"./forms.html",
+                    "title": "Forms Avtivity"
+                }
+            ]
+        },
+        {
+            "lesson":"10",
+            "links":[
+                {
+                    "url":"./lesson09/prophets.html",
+                    "title":"JSON Activity"
+                }
+            ]
+        }
+
+    ]
+}
