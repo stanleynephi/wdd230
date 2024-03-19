@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development Project Nuley Stanley Nephi - Chamber of Commerce"
+    />
+    <meta name="author" content="Nuley Stanley Nephi" />
+    <meta property="og:title" content="About Accra Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://ama.gov.gh/img/fade-slider/accra-1.jpg"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://stanleynephi.github.io/wdd230/" />
+    <title>Chamber of Commerce</title>
+    <!--styles sheets and javascript links -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="icon" href="images/favicon.webp" />
+  </head>
+  <body>
+    <header>
+      <img src="images/favicon.webp" alt="Chambre of Commerce Logo" />
+      <h1>Chamber of Commerce</h1>
+      <div class="buttons">
+        <button id="menu"></button>
+        <label class="switch">
+          <input type="checkbox" /> <span class="slider round"></span
+        ></label>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="./index.html">Home </a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Calendar </a></li>
+        <li><a href="#">News or Blog </a></li>
+        <li><a href="#">Member Directory </a></li>
+      </ul>
+    </nav>
+    <!-- main body and content-->
+    <main>
+      <div class="layout">
+        <button id="grid">grid</button>
+        <button id="list">list</button>
+      </div>
+      <section class="directory"></section>
+    </main>
+
+    <footer id="footer">
+      <div class="name">Chamber of Commerce</div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">News or Blog</a></li>
+          <li><a href="#">Member Directory</a></li>
+        </ul>
+        <div class="details">
+          &copy; copyright reserved 2023
+          <p id="lastmodified"></p>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="socialicons"></div>
+        <div class="email">
+          <a href="mailto:stanleynuley@gmail.com">stanleynuley@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+    <script defer src="scripts/chamber.js" type="module"></script>
+    <script defer src="scripts/member.js"></script>
+    <!-- <script defer src="scripts/windchill.js"></script> -->
+  </body>
+</html>
