@@ -32,6 +32,11 @@ function populateData(companies){
         web.setAttribute('href',`${detail.website}`)
         phone1.textContent = detail.phonenumbers.number1
 
+        card.style.width="30%"
+        card.style.textAlign ="center"
+        // address1.style.width = "30%"
+        // address1.style.textAlign = "center"
+
      
         // web.href = detail.website
     })
