@@ -524,6 +524,7 @@ input[type="submit"]:hover {
         height: fit-content;
         border-radius: 20px;
         text-transform: uppercase;
+        z-index: 0;
     }
 }
 
@@ -540,8 +541,4 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-}
-
-button:active {
-    z-index: -1;
 }
