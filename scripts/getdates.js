@@ -23,10 +23,10 @@ const option2 = {
 name.innerHTML = `&copy` +" "+ `${new Date().getFullYear()}`+" "+ `${student}`
 
 // temperature
-function getCelsius(fahrenheit) {
-    return (fahrenheit - 32) * (5/9);}
+// function getCelsius(fahrenheit) {
+//     return (fahrenheit - 32) * (5/9);}
 
-let temperature = getCelsius(84);
+// let temperature = getCelsius(84);
 
 // last modified
 const modified = new Date(document.lastModified)
@@ -37,11 +37,11 @@ lastmod.innerHTML = `Last Modified:`+` `+`${modified.toLocaleDateString("en-UK",
 
 
 
-    // Select the second section with class "card"
-    const secondSection = document.querySelector('.card p:nth-child(4)');
+    // // Select the second section with class "card"
+    // const secondSection = document.querySelector('.weather p');
 
-    // populate
-    secondSection.innerHTML =  `&#127774;`+" "+`Temperature` + " "+ `${Math.floor(temperature,1)}` +`&deg;`+ "-" + "F";
+    // // populate
+    // secondSection.innerHTML =  `&#127774;`+" "+`Temperature` + " "+ `${Math.floor(temperature,1)}` +`&deg;`+ "-" + "F";
 
 
     let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
@@ -65,5 +65,48 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+
+
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=5.55&lon=0.19&appid=b2f21d334d4a4feb8a2dffa3560b3b92&units=metric";
+
+
+//async function to call the  api
+async function apiFetch(){
+    //try catch for the function
+    try{
+        const response = await fetch (url)
+        if(response.ok){
+            const data = await response.json()
+            console.log(data)
+            displayResults(data)
+        }
+        else{
+            throw Error(await response.text())
+        }
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+
+apiFetch()
+
+
+function displayResults(data){
+    // curentTemp.innerHTML = `${data.temp}`
+     const curentTemp = document.querySelector("#current-temp");
+     const weatherIcon = document.querySelector("#weather-icon");
+     const captionDesc = document.querySelector("figcaption");
+     const iconsSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+
+
+    curentTemp.innerHTML = `${Math.ceil(data.main.temp,1)}.0 &deg;C`;
+    weatherIcon.setAttribute("src",iconsSrc)
+    weatherIcon.setAttribute( "alt",`Image Icon For ${data.weather[0].description}`)
+    captionDesc.innerHTML = (`${data.weather[0].description}`).toUpperCase()
+}
 
 
