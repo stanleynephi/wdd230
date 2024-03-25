@@ -88,6 +88,15 @@
                     "title":"JSON Activity"
                 }
             ]
+        },
+        {
+            "lesson":11,
+            "links":[
+                {
+                "url": "./lesson10/weather.html", 
+                "title": "Weather App Activity"
+            }
+        ]
         }
 
     ]
