@@ -239,6 +239,21 @@
         }
     }
 
+
+    .banner {
+        margin-top: 30%;
+        margin-bottom: -25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font: 5px;
+        background-color: inherit;
+
+        >h1 {
+            font-size: 20px;
+        }
+    }
+
     #moments {
         display: flex;
         flex-direction: column;

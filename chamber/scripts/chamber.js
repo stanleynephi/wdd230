@@ -63,15 +63,29 @@ theme.addEventListener("change",() => {
 
 
 import{
-    display
+    getData
 } from "./windchill.js";
 
 
 const buttons = document.getElementById("btn1");
-buttons.addEventListener("click" , display);
+buttons.addEventListener("click" , getData);
 
 
+//remove banner if day is not tuesday
+const banner = document.querySelector("article");
 
+const day = new Date();
+let days = day.getDay();
+console.log(days)
+// conditional statement
+
+if (days === 1 || days === 2 || days === 3){
+    banner.classList.add(".banner")
+}
+else{
+    //do nothing
+    banner.style.display = "none"
+}
 
 
 

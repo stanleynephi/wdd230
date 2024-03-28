@@ -23,6 +23,16 @@ main {
     flex-direction: column;
 }
 
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >p {
+        font-size: 20px;
+    }
+}
+
 
 li {
     list-style-type: none;
@@ -123,7 +133,7 @@ h2 {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-image: linear-gradient(to right bottom, rgb(160, 133, 57), rgb(255, 255, 255), rgb(35, 123, 152));
+    /* background-image: linear-gradient(to right bottom, rgb(160, 133, 57), rgb(255, 255, 255), rgb(35, 123, 152)); */
     row-gap: 10px;
     border-radius: 20px 0px;
 

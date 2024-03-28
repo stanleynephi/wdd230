@@ -3,31 +3,40 @@ const temp = document.getElementById("temperature");
 const wind = document.getElementById("windspeed");
 const result = document.getElementById( "results" );
 
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=5.55&lon=0.19&appid=b2f21d334d4a4feb8a2dffa3560b3b92&units=metric";
 
-//function
-export function display(){
-    const tempLimit = 50;
-    const speedLimit = 3.0;
 
-    const temp1 = parseFloat(temp.value);
-    const wind1 = parseFloat(wind.value);
-
-    if(tempLimit <= temp1 && wind1 > speedLimit){
-        let windChill = 35.74 + (0.6215 * temp1) - (35.75 * Math.pow(wind1, 0.16)) + (0.4275 * temp1 * Math.pow(wind1, 0.16));
-        result.innerHTML = windChill.toFixed(2); 
-        temp.focus();
-        temp.value ="";
-        wind.focus();
-        wind.value ="";
+//function for url
+export async function getData(){
+    try{
+        const response = await fetch(url)
+        if(response.ok){
+            const data  = await response.json()
+            displayResults(data)
+            console.log(data)
+        }
+        else{
+            throw Error(await response.text())
+        }
     }
-    else {
-        result.innerHTML = "N/A";
-        temp.focus();
-        temp.value ="";
-        wind.focus();
-        wind.value ="";
+    catch(error){
+        console.log(error)
     }
+}
 
+getData();
+
+
+function displayResults(data){
+    const weather = document.querySelector("figure img")
+    const weather1 = document.querySelector("figure p")
+    const temp = document.querySelector(".tempinfo span")
+    const iconsSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+
+    weather.setAttribute("src",iconsSrc)
+    weather.setAttribute("width",100)
+    weather1.textContent = data.weather[0].main
+    temp.innerHTML = `${data.main.temp} &deg;C`
 
 }
 
